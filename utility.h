@@ -1,6 +1,5 @@
 #ifndef UTILITY_H
 #define UTILITY_H
-#include <assert.h>
 
 /* Gives explicit recursion bound. */
 static void  _itoa (char** cursor, long long value, unsigned n) {
