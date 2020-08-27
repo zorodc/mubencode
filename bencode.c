@@ -60,7 +60,7 @@ unsigned bc_write (bc_val root, char* o) {
 	void *const saved = o;
 
 	for (bc_val* v; s.n-- && (v=s.v[s.n]);) switch (v->which) {
-	case BCK_END:   *o++ = 'e';  break;
+	case BCK_END:     *o++ = 'e';    break;
 	case BCK_STR:
 		itoa(&o, v->Str.len); *o++=':';
 		sadd(&o, v->Str.buf);    break;
